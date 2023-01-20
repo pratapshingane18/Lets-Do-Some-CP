@@ -5,12 +5,20 @@ void UpdateArray(int arr[], int index, int val){
     arr[index] = val;
 }
 
+
+
+// Pass Size of Array as the parameter
 void PrintArray(int arr[], int n){
+    // int n = arr.size();
+    // If we try and do that it will return value of Size that pointer takes mostly 8
+    
     
         for(int i =0; i < n; i++){
         cout<<arr[i]<<endl;
     }
 }
+
+
 
 int main()
 {
