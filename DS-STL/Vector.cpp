@@ -24,6 +24,11 @@ int main()
     vector<int> sixth;
 
     vector<int> v = {1,2,3,4,5};
+   
+    // We know that there will be atleast 100 Elements and more 
+    // So to reduce the cost of doubling the Memory Size of the Vector
+    // We already Reserved 100 Elements 
+     v.reserve(100);
     // Access Element
     cout<<v.at(2)<<endl;
     cout<<v[3]<<endl;
@@ -54,7 +59,7 @@ int main()
     // Erase thr Range - the first 3 Elements:
     v.erase(v.begin(), v.begin() +3);
 
-    
+
 
 
 
